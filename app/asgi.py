@@ -1,7 +1,8 @@
 from litestar import Litestar
 from litestar.openapi.config import OpenAPIConfig
-from advanced_alchemy.extensions.litestar.plugins.init_plugin import SQLAlchemyInitPlugin as SQLAlchemyPlugin
+from advanced_alchemy.extensions.litestar import SQLAlchemyPlugin
 from advanced_alchemy.extensions.litestar import AlchemyExtension
+
 from app.routes.user import UserController
 from app.config import DATABASE_URL
 
