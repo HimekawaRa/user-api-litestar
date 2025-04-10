@@ -7,6 +7,7 @@ class Base(DeclarativeBase):
 
 class User(Base):
     __tablename__ = 'user'
+    __table_args__ = {'quote': True}
     
     id = Column(BigInteger, primary_key=True, autoincrement=True)
     name = Column(String, nullable=False)
